@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProgramaNotes.AboutPage">
+    <ContentPage.Content>
+        <VerticalStackLayout>
+            <Editor
+                x:Name="FileEditor"
+                Placeholder="Digite aqui o conteudo do seu arquivo"
+            ></Editor>
+            <HorizontalStackLayout Margin="20" HorizontalOptions="Center" Spacing="15">
+    
+                <Button
+                    x:Name="SaveButton"
+                    Text="Salvar"
+                    Clicked="SaveButton_OnClicked"
+                    />
+                    
+                <Button
+                    x:Name="DeleteButton"
+                    Text="Apagar"
+                    Clicked="DeleteButton_OnClicked"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
